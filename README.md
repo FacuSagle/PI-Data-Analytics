@@ -19,22 +19,25 @@ Solo en 2022, se contabilizaron 3.828 muertes fatales en este tipo de hechos. Lo
 Elaboración de un proyecto de anális de datos, con el fin de generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales. Se cuenta con un dataset sobre homicidios  en siniestros viales acaecidos en la Ciudad de Buenos Aires durante el periodo 2016-2021 (homicidios.xlsx). Este dataset se encuentra en formato xlsx y contiene dos hojas llamadas: hechos y víctimas. Asimismo, se incluyen dos hojas adicionales de diccionarios de datos. La principal fuente de informacion para el armado de este dataset son datos policiales, generando una base de datos que incluyen fecha y ubicación del hecho y tipo de transporte involucrado. Además se especifica el género y edad de las víctimas.
 
 ### Datasets adicionales:
-- cruces-semaforizados: Este conjunto de datos proporciona información detallada sobre los cruces que cuentan con semáforos. Incluye detalles como la fecha de inauguración y finalización de cada semáforo, su tipo y ubicación geográfica.
-Enlace: https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/cruces-semaforizados/cruces-semaforizados.csv
+- cruces-semaforizados: Este conjunto de datos proporciona información detallada sobre los cruces que cuentan con semáforos. Incluye detalles como la fecha de inauguración y finalización de cada semáforo, su tipo y ubicación geográfica. 
 
-- Conteociclistas-GCBA: Conjunto de datos que ofrece información sobre los viajes anuales realizados por ciclistas en la Ciudad Autónoma de Buenos Aires.
+Enlace: [Cruces semaforizados](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/cruces-semaforizados/cruces-semaforizados.csv)https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/cruces-semaforizados/cruces-semaforizados.csv
 
-- Mapa de CABA en Formato GeoJSON: Representación geográfica de la Ciudad Autónoma de Buenos Aires en formato GeoJSON, ideal para análisis espaciales y visualizaciones geográficas.
-Enlace: https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ministerio-de-educacion/comunas/comunas.geojson
+- **Conteociclistas-GCBA:** Conjunto de datos que ofrece información sobre los viajes anuales realizados por ciclistas en la Ciudad Autónoma de Buenos Aires.
 
-Barrios de las Comunas: Este conjunto de datos ofrece una lista completa de los barrios que conforman cada comuna en la Ciudad Autónoma de Buenos Aires.
+- **Mapa de CABA en Formato GeoJSON:** Representación geográfica de la Ciudad Autónoma de Buenos Aires en formato GeoJSON, ideal para análisis espaciales y visualizaciones geográficas.
 
-Enlace: https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ministerio-de-educacion/comunas/comunas.csv
+Enlace: [Mapa de CABA](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ministerio-de-educacion/comunas/comunas.geojson)
+
+**Barrios de las Comunas:** Este conjunto de datos ofrece una lista completa de los barrios que conforman cada comuna en la Ciudad Autónoma de Buenos Aires.
+
+Enlace: [Barrios de las comunas](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ministerio-de-educacion/comunas/comunas.csv)
 
 ### Paginas webs utilizadas
 
-- Población de las Comunas: Este enlace te dirige a una página de Wikipedia que presenta una lista de las comunas de la Ciudad de Buenos Aires ordenadas por población, ofreciendo así un panorama detallado de la distribución demográfica en la ciudad.
-"https://es.wikipedia.org/wiki/Anexo:Comunas_de_la_ciudad_de_Buenos_Aires_por_poblaci%C3%B3n"
+**- Población de las Comunas:** Este enlace te dirige a una página de Wikipedia que presenta una lista de las comunas de la Ciudad de Buenos Aires ordenadas por población, ofreciendo así un panorama detallado de la distribución demográfica en la ciudad.
+
+Enlace: [Poblacion de las comunas]("https://es.wikipedia.org/wiki/Anexo:Comunas_de_la_ciudad_de_Buenos_Aires_por_poblaci%C3%B3n")
 
 ## EDA
 
@@ -54,58 +57,46 @@ Durante el Análisis Exploratorio de Datos (EDA), se realizarán las siguientes 
 
 ### Archivos generados en el archivo del EDA
 
-- licencias: Informacion sobre las licencias de conducir otorgadas en CABA.
-
-- kpis: Se manipulo los datos para crear una tabla que contenga la informacion necesaria para presentar en segundo y tercer KPI en el dashboard.
-
-- df_homicidios_victimas: Informacion sobre las victimas luego del EDA
-- df_homicidios_hechos: Informacion sobre los hechos luego del EDA
-- df_comunas: Informacion la poblacion y los barrios de las comunas de CABA generado a partir de "https://es.wikipedia.org/wiki/Anexo:Comunas_de_la_ciudad_de_Buenos_Aires_por_poblaci%C3%B3n" (poblacion) y 'https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ministerio-de-educacion/comunas/comunas.csv' 
-
-
-
 En este archivo se generan tablas adicionales que son fundamentales para el análisis. A continuación, se detallan los archivos CSV generados:
 
-ubicacion_homicidios_semaforos: Contiene información sobre si los accidentes ocurrieron en calles con o sin semáforos. Aunque no se distingue específicamente si la calle es un cruce, al relacionar esta tabla con otros datos se puede determinar qué accidentes ocurrieron en cruces.
+- ubicacion_homicidios_semaforos: Contiene información sobre si los accidentes ocurrieron en calles con o sin semáforos. Aunque no se distingue específicamente si la calle es un cruce, al relacionar esta tabla con otros datos se puede determinar qué accidentes ocurrieron en cruces.
 
-tasa_kpi: Esta tabla se ha generado para proporcionar la información esencial que permite determinar el primer KPI y permite su correcta visualizacionen el dashboard posteriormente.
+- tasa_kpi: Esta tabla se ha generado para proporcionar la información esencial que permite determinar el primer KPI y permite su correcta visualizacionen el dashboard posteriormente.
 
-semaforos: Ofrece información relacionada con la ubicación y características de los semáforos en la Ciudad Autónoma de Buenos Aires (CABA).
+- semaforos: Ofrece información relacionada con la ubicación y características de los semáforos en la Ciudad Autónoma de Buenos Aires (CABA).
 
-relaciones: Proporciona los datos necesarios para visualizar posibles relaciones entre diferentes variables, como auto-pasajero acompañante, moto-conductor, género y tipo de vía.
+-relaciones: Proporciona los datos necesarios para visualizar posibles relaciones entre diferentes variables, como auto-pasajero acompañante, moto-conductor, género y tipo de vía.
 
-licencias: Esta tabla ofrece información detallada sobre las licencias de conducir otorgadas en la Ciudad Autónoma de Buenos Aires (CABA), incluyendo datos relevantes sobre el género de los titulares y el tipo de licencia (nueva o renovada).
+- licencias: Esta tabla ofrece información detallada sobre las licencias de conducir otorgadas en la Ciudad Autónoma de Buenos Aires (CABA), incluyendo datos relevantes sobre el género de los titulares y el tipo de licencia (nueva o renovada).
 
-kpis: Después de un análisis exhaustivo de los datos, esta tabla se ha preparado con la información esencial para visualizar el segundo y tercer KPI en el dashboard.
+- kpis: Después de un análisis exhaustivo de los datos, esta tabla se ha preparado con la información esencial para visualizar el segundo y tercer KPI en el dashboard.
 
-df_homicidios_victimas: Esta tabla ofrece información detallada sobre las víctimas tras la realización del EDA. 
+- df_homicidios_victimas: Esta tabla ofrece información detallada sobre las víctimas tras la realización del EDA. 
 
-df_homicidios_hechos: Proporciona datos sobre los incidentes o hechos relevantes después de la realización del EDA.
+- df_homicidios_hechos: Proporciona datos sobre los incidentes o hechos relevantes después de la realización del EDA.
 
-df_comunas: Esta tabla combina información sobre la población y los barrios de las comunas de CABA.
+- df_comunas: Esta tabla combina información sobre la población y los barrios de las comunas de CABA.
 
 
 ## KPIs
 
 Los tres indicadores claves de rendimiento (KPIs) propuestos son:
 
-Reducir en un 10% la tasa de homicidios en siniestros viales de los últimos seis meses, en CABA, en comparación con la tasa de homicidios en siniestros viales del semestre anterior.
+- **Reducir en un 10% la tasa de homicidios en siniestros viales de los últimos seis meses, en CABA, en comparación con la tasa de homicidios en siniestros viales del semestre anterior.**
 
 Se define a la tasa de homicidios en siniestros viales como el número de víctimas fatales en accidentes de tránsito por cada 100,000 habitantes en un área geográfica durante un período de tiempo específico. Su fórmula es: (Número de homicidios en siniestros viales / Población total) * 100,000
 
-Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año, en CABA, respecto al año anterior.
+-  **Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año, en CABA, respecto al año anterior.**
 
 Se define a la cantidad de accidentes mortales de motociclistas en siniestros viales como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que viajaban en moto en un determinado periodo temporal. Su fórmula para medir la evolución de los accidentes mortales con víctimas en moto es: (Número de accidentes mortales con víctimas en moto en el año anterior - Número de accidentes mortales con víctimas en moto en el año actual) / (Número de accidentes mortales con víctimas en moto en el año anterior) * 100
+
+- **Reducir un 7% la cantidad de accidentes mortales en avenidas en el último año, en CABA, respecto al año anterior.**
 
 ## Dashboard
 
 Se ha diseñado un dashboard interactivo que presenta visualizaciones detalladas de los KPIs, información sobre incidentes y víctimas, así como análisis de las relaciones entre las variables del conjunto de datos. Además, se incluye información relevante sobre los cruces y la ubicación de los semáforos.
 
 ### Mapa de formas de CABA
-Para eso en la pagina geojson.io copiamos y pegamos el archivo gjson que se encuentra en la pagina y vamos a la solapa de tabla, ahi eliminamos todas las columnas innecesarias y nos aseguramos que se tengan las mismas comunas que en los datos, cambiamos el nombres de las columnas y guardamos NUEVAMENTE como gjson. Este archivo que se encuentra en los archivos subidos como map.geojson, lo cargamos en la pagina https://mapshaper.org/ para simplemente exportarlo como un archivo topojson (map2).
-En opciones y configuracion, ir a opciones-> global->caracteristicas de version preliminar y activar la opcion de Objeto visual mapa de formas. 
-Luego en vista de iforme, en la solapa de visualizaciones seleccionar Mapa de Formas y en el campo de ubicaciones agregar la columna donde se tiene las comunas. Posteriormente, todavia en visualizaciones ir a formato visual ->configuracion del mapa y en tipo de asignacion seleccionar Mapa personalizado. En la opcion de agregar un tipo de mapa seleccionar el mapa en formato topojson creado previamente y posteriormente, si por ejemplo se quiere tener un mapa de densidades agregar al campo de saturacion de color la columna donde se tenga los id (en este caso seria los id de la victima). 
-
 A continuación, se describirá el proceso para generar un Mapa de Formas de la Ciudad Autónoma de Buenos Aires (CABA) a partir de un archivo GeoJSON en Power BI.
 
 1. **Descarga del Mapa**: Primero, descarga el mapa de la página oficial del gobierno de la ciudad de Buenos Aires. El archivo estará en formato GeoJSON.
@@ -123,7 +114,7 @@ A continuación, se describirá el proceso para generar un Mapa de Formas de la 
 	- **Configuración del Mapa:** Aún en visualizaciones, ve a "Formato visual" -> "Configuración del mapa". En "Tipo de asignación", elige "Mapa personalizado". En la opción para agregar un tipo de mapa, selecciona el archivo TopoJSON creado anteriormente. Si deseas visualizar un mapa de densidades, añade la columna que contiene los IDs de las víctimas al campo de "Saturación de color".
 
 ### Paleta de colores:
-Dentro del archivo `theme`, encontrará la paleta de colores personalizada diseñada siguiendo las directrices del manual de marca de Buenos Aires Ciudad. Esta paleta se ha creado con el objetivo de mantener una coherencia visual el proyecto.
+Dentro del archivo `theme.txt`, encontrará la paleta de colores personalizada diseñada siguiendo las directrices del manual de marca de Buenos Aires Ciudad. Esta paleta se ha creado con el objetivo de mantener una coherencia visual el proyecto.
 
 Para más detalles sobre los colores y las pautas de diseño, consulte el [Manual de Marca de Buenos Aires Ciudad](https://buenosaires.gob.ar/jefedegobierno/manual-de-marca).
 
@@ -138,12 +129,16 @@ En total, se registraron 717 víctimas a causa de siniestros viales.
 **Distribución de Accidentes**
 El 78% de los accidentes se produjeron en cruces, de  los cuales, en el 87% de los casos no contaban con semáforos. 
 
-**Cruces semaforizados con múltiples accidentes:**
+**Localización de Accidentes Fatales**
+
+La General Paz fue la calle con la mayor cantidad de muertes, registrando 61 víctimas.
+
+Los cruces semaforizados con múltiples accidentes:
 - Alcorta, Amancio Av. y Zavaleta
 - Corrientes Av. y Dorrego Av.
 - Santa Fe Av. y Godoy Cruz
 
-**Cruces con más accidentes:**
+Los cruces con más accidentes fueron:
 - 27 de Febrero Av. y Escalada Av. (5 víctimas)
 - Paz Gral. Av. y Bablin, Ricardo, Dr. Av. (4 víctimas)
 - Paz, Gral. Av. y Del Libertador Av. (4 víctimas)
@@ -155,9 +150,6 @@ El 78% de los accidentes se produjeron en cruces, de  los cuales, en el 87% de l
 
 Es crucial señalar que todos los cruces mencionados son intersecciones sin semáforos. Al enfocarnos en los accidentes en cruces con avenidas, donde las víctimas circulaban en motocicleta, ambos aspecto clave en nuestro análisis, se contabilizaron 146 víctimas. Resulta notable que, a pesar de la escasa presencia de semáforos en la comuna 8, esta área representa una proporción significativa de estos accidentes, con el 12% del total. En esta comuna se ubica la intersección con el mayor número de víctimas, 27 de Febrero Av. y Escalada Av., donde el 94% de los cruces involucrados en los accidentes carecían de semáforos.
 En la comuna 8 se observa una escasa presencia de semáforos, ademas de concentrar un número significativo de accidentes en este grupo de las victimas, representando el 12% del total y de los cuales el 94% ocurrieron en lugares sin semaforo. La intersección de 27 de Febrero Av. y Escalada Av., ubicada en esta comuna, es la que registra el mayor número de víctimas.
-
-**Localización de Accidentes Fatales**
-La General Paz fue la calle con la mayor cantidad de muertes, registrando 61 víctimas.
 
 **Tipos de Calles**
 Las avenidas resultaron ser las más críticas, siendo el escenario del 62% de los accidentes.
