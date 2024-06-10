@@ -21,7 +21,7 @@ Elaboración de un proyecto de anális de datos, con el fin de generar informaci
 ### Datasets adicionales:
 - cruces-semaforizados: Este conjunto de datos proporciona información detallada sobre los cruces que cuentan con semáforos. Incluye detalles como la fecha de inauguración y finalización de cada semáforo, su tipo y ubicación geográfica. 
 
-Enlace: [Cruces semaforizados](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/cruces-semaforizados/cruces-semaforizados.csv)https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/cruces-semaforizados/cruces-semaforizados.csv
+Enlace: [Cruces semaforizados](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/cruces-semaforizados/cruces-semaforizados.csv)
 
 - **Conteociclistas-GCBA:** Conjunto de datos que ofrece información sobre los viajes anuales realizados por ciclistas en la Ciudad Autónoma de Buenos Aires.
 
@@ -148,8 +148,8 @@ Los cruces con más accidentes fueron:
 - Independencia Av. y Cevallos, Virrey (3 víctimas)
 - Paz Gral. Av. y de los Corrales Av. (3 víctimas)
 
-Es crucial señalar que todos los cruces mencionados son intersecciones sin semáforos. Al enfocarnos en los accidentes en cruces con avenidas, donde las víctimas circulaban en motocicleta, ambos aspecto clave en nuestro análisis, se contabilizaron 146 víctimas. Resulta notable que, a pesar de la escasa presencia de semáforos en la comuna 8, esta área representa una proporción significativa de estos accidentes, con el 12% del total. En esta comuna se ubica la intersección con el mayor número de víctimas, 27 de Febrero Av. y Escalada Av., donde el 94% de los cruces involucrados en los accidentes carecían de semáforos.
-En la comuna 8 se observa una escasa presencia de semáforos, ademas de concentrar un número significativo de accidentes en este grupo de las victimas, representando el 12% del total y de los cuales el 94% ocurrieron en lugares sin semaforo. La intersección de 27 de Febrero Av. y Escalada Av., ubicada en esta comuna, es la que registra el mayor número de víctimas.
+Es crucial señalar que todos los cruces mencionados son intersecciones sin semáforos. Al enfocarnos en los accidentes en cruces con avenidas, donde las víctimas circulaban en motocicleta, ambos aspecto clave en nuestro análisis, se contabilizaron 146 víctimas. Resulta notable que, a pesar de la escasa presencia de semáforos en la comuna 8, esta área representa una proporción significativa de estos accidentes, con el 12% del total, de los cuales el 94% ocurrieron en lugares sin semaforo. En esta comuna se ubica la intersección con el mayor número de víctimas, 27 de Febrero Av. y Escalada Av.
+
 
 **Tipos de Calles**
 Las avenidas resultaron ser las más críticas, siendo el escenario del 62% de los accidentes.
